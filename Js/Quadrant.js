@@ -12,3 +12,16 @@ function quadrant(x, y) {
     if (x < 0 && y < 0) return 3;
     return 4;
 }
+
+// Another way
+
+function quadrant(x, y) {
+    const plane = [
+      [2,1],
+      [3,4]
+    ];
+    const xAxis = x > 0 ? 1 : 0;
+    const yAxis = y > 0 ? 0 : 1;
+    
+    return plane[yAxis][xAxis];
+  }
