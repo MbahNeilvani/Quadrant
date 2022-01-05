@@ -29,4 +29,23 @@ function quadrant(x, y) {
         return 3;
       }
     }
-  }
+}
+
+// Another
+
+function quadrant(x, y) {
+    const firstQuadrant = x > 0 && y > 0;
+    const secondQuadrant = x < 0 && y > 0;
+    const thirdQuadrant = x < 0 && y < 0;
+    const fourthQuadrant = x > 0 && y < 0;
+    
+    if (firstQuadrant) {
+      return 1;
+    } else if (secondQuadrant) {
+      return 2;
+    } else if (thirdQuadrant) {
+      return 3;
+    } else if (fourthQuadrant) {
+      return 4;
+    }
+}
